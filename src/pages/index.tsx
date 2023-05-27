@@ -7,9 +7,9 @@ export default function Home() {
   const { data: session } = useSession();
   return (
     <>
-    <h1 className='text-red-700 text-lg bg-yellow-300'>
+    <h2 className='text-red-700 text-lg bg-yellow-300'>
       {session?.user?.name}
-      </h1>
+      </h2>
       <img 
       src={session?.user?.image!}
       alt=""
