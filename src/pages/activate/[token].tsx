@@ -21,7 +21,7 @@ export default function Activate({ token }: { token: string }) {
     <div className="bg-black h-screen flex items-center justify-center text-center">
       {error && (
         <div>
-          <p className="text-red-500 text-xl font-bold">{error}</p>
+          <p className="text-red-700 text-xl font-bold">{error}</p>
           <button
             className="mt-4 bg-blue-500 text-white hover:bg-blue-700 text-md uppercase font-bold px-8 py-2 rounded-md sm:mr-2 mb-1 ease-linear transition-all duration-150"
             onClick={() => signIn()}
@@ -32,7 +32,7 @@ export default function Activate({ token }: { token: string }) {
       )}
       {success && (
         <div>
-          <p className="text-green-500 text-xl font-bold">{success}</p>
+          <p className="text-green-700 text-xl font-bold">{success}</p>
           <button
             className="mt-4 bg-blue-500 text-white hover:bg-blue-700 text-md uppercase font-bold px-8 py-2 rounded-md sm:mr-2 mb-1 ease-linear transition-all duration-150"
             onClick={() => signIn()}

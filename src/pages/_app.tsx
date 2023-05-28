@@ -8,9 +8,9 @@ export default function App({ Component, pageProps: { session, ...pageProps },
 }: AppProps) {
   return (
   <>
-      {/* <Head>
-        <title>Authentification - MOHAMED HAJJI</title>
-      </Head> */}
+      {/* <head>
+        <title>Authentification - ABHINAV GUPTA</title>
+      </head> */}
       <SessionProvider session={session}>
         <ToastContainer
           position="top-left"
