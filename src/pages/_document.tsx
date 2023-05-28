@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-        {/* <title>AUTHENTIFICATION - ABHINAV GUPTAa</title> */}
+        {/* <title>AUTHENTIFICATION - ABHINAV GUPTAaa</title> */}
       
       <body>
         <Main />
