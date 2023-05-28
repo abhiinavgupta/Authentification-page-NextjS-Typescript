@@ -1,7 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { SessionProvider } from "next-auth/react"
-// import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 export default function App({ Component, pageProps: { session, ...pageProps },
 }: AppProps) {
@@ -11,7 +11,7 @@ export default function App({ Component, pageProps: { session, ...pageProps },
         <title>Authentification - MOHAMED HAJJI</title>
       </Head> */}
       <SessionProvider session={session}>
-        {/* <ToastContainer
+        <ToastContainer
           position="top-left"
           autoClose={5000}
           hideProgressBar={false}
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps: { session, ...pageProps },
           draggable
           pauseOnHover
           theme="colored"
-        /> */}
+        />
         <Component {...pageProps} />
       </SessionProvider>
     </>
