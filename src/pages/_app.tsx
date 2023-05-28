@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Head from "next/head";
 import { SessionProvider } from "next-auth/react"
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,9 +9,9 @@ export default function App({ Component, pageProps: { session, ...pageProps },
 }: AppProps) {
   return (
   <>
-      {/* <head>
+      <Head>
         <title>Authentification - ABHINAV GUPTA</title>
-      </head> */}
+      </Head>
       <SessionProvider session={session}>
         <ToastContainer
           position="top-left"
