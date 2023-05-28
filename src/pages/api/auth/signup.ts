@@ -50,13 +50,13 @@ export default async function handler(
     const activation_token = createActivationToken({
       id: newuser._id.toString(),
     });
-    const url = `${process.env.NEXTAUTH_URL}/activate/${activation_token}`;
+    const url = `${process.env.NEXT_AUTH_URL}/activate/${activation_token}`;
     await sendMail(
       newuser.email,
       newuser.name,
       "",
       url,
-      "Activate your account - Dev7",
+      "Activate your account - authPage",
       activateTemplateEmail
     );
     res.json({
